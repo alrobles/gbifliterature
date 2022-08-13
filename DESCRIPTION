@@ -5,7 +5,7 @@ Version: 0.1.0
 Author: Angel Robles
 Maintainer: Angel Robles <a.l.robles.fernandez@gmail.com>
 Description: Simple wrapper of the GBIF Literature API. Let you download
-   peer reviewed literature by year
+   peer reviewed literature by year.
 License: MIT + file LICENSE
 Imports:
    httr2,
