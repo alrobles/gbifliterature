@@ -2,42 +2,20 @@
 % Please edit documentation in R/get_gbif_literature_year.R
 \name{get_gbif_literature_year}
 \alias{get_gbif_literature_year}
-\title{GBIF Literature API wrapper}
+\title{get_gbif_literature_year}
 \usage{
-get_gbif_literature_year(
-  year = 2022,
-  limit = 1000,
-  peer = TRUE,
-  offset = 1000,
-  returnOffset = TRUE
-)
+get_gbif_literature_year(year)
 }
 \arguments{
-\item{year}{an integer with year. Should have a value over 2000 to present}
-
-\item{limit}{The number of entries returned. If is null the default is 20}
-
-\item{peer}{Logical. If is a peer reviewed work or not.}
-
-\item{offset}{Determines the offset for the search results.
-A limit of 20 and offset of 20, will get the second page of 20 results}
-
-\item{returnOffset}{Logical. Returns only the offset or the limit and
-offset result.}
+\item{year}{An integer greather than 2000 to present.}
 }
 \value{
-a data frame with literature information
-associated to GBIF Literature API
+A \code{data.frame} with gbif literature for that specific year
 }
 \description{
-This wrapper is designed to retrive gbif literature for a
-full year.  The idea to scrap the full information of a full year
-is to limit 1000 entries and offset other 1000 with this you retrive all
-the citations in that year.
+Simply GBIF Literature API wrapper to retrive all
+peer reviewed literature in a given year
 }
 \examples{
-get_gbif_literature_year(year = 2022,
-limit = 2,
- peer = TRUE,
- returnOffset = FALSE)
+get_gbif_literature_year(2001)
 }

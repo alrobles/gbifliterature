@@ -8,6 +8,9 @@ Description: Simple wrapper of the GBIF Literature API. Let you download
    peer reviewed literature by year.
 License: MIT + file LICENSE
 Imports:
+   magrittr,
+   httr,
+   dplyr,
    httr2,
    jsonlite,
    tibble
